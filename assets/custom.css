@@ -1,0 +1,9 @@
+p.line-item-property__field {
+    display: none;
+}
+.frames_container, .fabrics_container {
+    margin-top: 20px;
+}
+.selected {
+    border: solid 1px;
+}

@@ -147,6 +147,20 @@
                     {% endif %}
                 </div>
             {%- endfor -%}
+
+            <div class="frames_container">
+                <p><span class="font-semibold">Frame:</span> <span class="frame"></span></p>
+                {% for frame in shop.metaobjects.shopify--eyewear-frame-design.values %}
+                    <button>{{frame.label}}</button>
+                {% endfor %}
+            </div>
+
+            <div class="fabrics_container">
+                <p><span class="font-semibold">Fabric:</span> <span class="fabric"></span></p>
+                {% for fabric in shop.metaobjects.shopify--fabric.values %}
+                    <button>{{fabric.label}}</button>
+                {% endfor %}
+            </div>
         </variant-picker>
         <script type="application/json">
            {{ product.variants | json }}
