@@ -1,0 +1,87 @@
+.banner-breadcrumbs + .collection-banner--bottom .collection-banner__inner {
+  padding-top: 0;
+}
+@media (max-width: 767.98px) {
+  .banner-breadcrumbs + .collection-banner--left .collection-banner__inner, .banner-breadcrumbs + .collection-banner--right .collection-banner__inner {
+    padding-top: 0;
+  }
+}
+.banner-breadcrumbs + .collection-banner--no-bg .collection-banner__inner {
+  padding-top: 0;
+}
+
+.collection-banner .container-full {
+  width: 100%;
+}
+.collection-banner__wrapper {
+  position: relative;
+  row-gap: 3.2rem;
+}
+@media (min-width: 768px) {
+  .collection-banner__wrapper {
+    gap: 6rem 3rem;
+  }
+}
+@media (min-width: 768px) {
+  .collection-banner--use_image_as_background .container-full {
+    padding: 0;
+  }
+}
+.collection-banner--use_image_as_background.collection-banner--adapt .collection-banner__bg-image {
+  height: auto;
+}
+.collection-banner--use_image_as_background .collection-banner__inner {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+}
+@media (min-width: 768px) {
+  .collection-banner--use_image_as_background .collection-banner__inner {
+    padding: 3rem;
+  }
+}
+.collection-banner--no-bg .collection-banner__inner {
+  position: relative;
+  padding: 0;
+}
+.collection-banner .collection-banner__image {
+  position: relative;
+  width: 100%;
+}
+.collection-banner .collection-banner__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.collection-banner .f-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (min-width: 768px) {
+  .collection-banner__image-left, .collection-banner__image-right {
+    flex-direction: row;
+  }
+}
+@media (min-width: 768px) {
+  .collection-banner__image-left .collection-banner__inner,
+  .collection-banner__image-left .f-image, .collection-banner__image-right .collection-banner__inner,
+  .collection-banner__image-right .f-image {
+    flex: 1;
+  }
+}
+@media (min-width: 768px) {
+  .collection-banner__image-left {
+    flex-direction: row-reverse;
+  }
+}
+.collection-banner__image-top {
+  flex-direction: column-reverse;
+}
