@@ -1,10 +1,20 @@
 jQuery(document).ready(function($) {
     $(".add_eyewear").click(function() {
+        var validate = true;
         $(".line-item-property__field").each(function() {
             if($(this).find("input").val().length == 0) {
-                alert("choose all options")
+                var option = $(this).attr("option");
+                validate = validate && false;
+                alert("Missing " + option)
+            }
+            else {
+                validate = validate && true
             }
         })
+        console.log(validate);
+        if(validate == true) {
+            $(".f-product-single__block--buy_buttons .f-product-form__buttons button").click()
+        }
     })
 
     $(".frames_container button").each(function() {

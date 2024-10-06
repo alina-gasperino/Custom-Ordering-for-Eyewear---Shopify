@@ -368,10 +368,10 @@
 											{% if block.settings.show_atc_button or show_dynamic_checkout %}
                         <product-form class="f-product-form f-main-product-form">
                             {%- form 'product', product, id: product_form_id, class: 'main-product-form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
-                                <p class="line-item-property__field">
+                                <p class="line-item-property__field" option="Frame">
                                     <input required class="required" id="frame" type="text" name="properties[Frame]">
                                 </p>
-                                <p class="line-item-property__field">
+                                <p class="line-item-property__field" option="Fabric">
                                     <input required class="required" id="fabric" type="text" name="properties[Fabric]">
                                 </p>
                                 <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" disabled>

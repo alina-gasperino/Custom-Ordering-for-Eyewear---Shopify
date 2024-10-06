@@ -7,3 +7,6 @@ p.line-item-property__field {
 .selected {
     border: solid 1px;
 }
+.f-product-single__block--buy_buttons .f-product-form__buttons button {
+    display: none;
+}
