@@ -34,12 +34,6 @@
             "size_chart_from_page": ""
           }
         },
-        "richtext_Rccbyx": {
-          "type": "richtext",
-          "settings": {
-            "text": "{{ product.metafields.shopify[\"eyewear-frame-design\"] | metafield_tag: field: 'label' }}"
-          }
-        },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {}
@@ -100,7 +94,6 @@
         "price",
         "59ca3415-b1aa-4301-b178-ad6e434ba477",
         "variant_picker_ffGHXq",
-        "richtext_Rccbyx",
         "quantity_selector",
         "buy_buttons",
         "2115d0d9-102e-4377-a68b-42b8ed4a4edc",

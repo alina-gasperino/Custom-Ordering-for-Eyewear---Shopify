@@ -11,7 +11,6 @@ jQuery(document).ready(function($) {
                 validate = validate && true
             }
         })
-        console.log(validate);
         if(validate == true) {
             $(".f-product-single__block--buy_buttons .f-product-form__buttons button").click()
         }
